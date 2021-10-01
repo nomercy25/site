@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.product-wrapper .product-col {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+}
+
+.product-wrapper .product-col .product {
+    border: 1px solid transparent;
+    padding: 15px;
+    transition: 0.3s ease-in;
+}
+
+.product-wrapper .product-col .product:hover {
+    border: 1px solid #000;
+
+}
+.product-wrapper .product-col .image {
+    overflow: hidden;
+}
+.product-wrapper .product-col .image img {
+    transform: scale(1, 1);
+    transition: all 0.3s ease-in;
+}
+.product-wrapper .product-col .product:hover .image img {
+    transform: scale(1.1, 1.1) rotate(5deg);
+
+}
+
+.product-wrapper .product-col .product .title {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.product-wrapper .product-col .product:hover .title {
+    color: #ff7e67;
+}
+
+.product-wrapper .product-col .product .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-wrapper .product-col .product .btn-cart {
+    display: flex;
+    background: #ff7e67;
+    color: #fff;
+    margin-top: 15px;
+    height: 50px;
+    padding: .375rem .75rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.product-wrapper .product-col .product .btn-cart:hover {
+    background-color: #de6b56;
+}
+
+.product-wrapper .product-col .product .btn-cart svg {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.product-wrapper .product-col .product .avel {
+    color: #2bc300;
+}
+
+.product-wrapper .product-col .product .price {
+    color: #ff7e67;
+
+}
+
+/*(<=1199px) CSS для ширины от 992px до 1199px*/
+@media (min-width: 992px) and (max-width: 1199) () {
+    .product-wrapper .product-col {
+        width: 33,3333%;
+    }
+}
+
+/*(<=1199px) CSS для ширины от 992px до 1199px*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .product-wrapper .product-col {
+    width: 33,3333%;
+  }
+}
+
+/* (<=991px) CSS для ширины от 768px до 991px*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-wrapper .product-col {
+    width: 33%;
+  }
+}
+
+/* (<=768px) CSS для ширины от 576px до 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .product-wrapper .product-col {
+    width: 50%;
+  }
+}
+
+/* (<=575px) CSS для ширины до 575px (включительно) */
+@media (max-width: 575px) {
+  .product-wrapper .product-col {
+    width: 100%;
+  }
+}
